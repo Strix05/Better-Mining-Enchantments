@@ -61,17 +61,6 @@ public class ModEnchantments {
                 AttributeModifierSlot.MAINHAND))
                 .exclusiveSet(enchantments.getOrThrow(ModTags.Enchantments.BETTER_MINING_EXCLUSIVE))
         );
-
-        register(registerable, VEINING, Enchantment.builder(Enchantment.definition(
-                items.getOrThrow(ItemTags.PICKAXES),
-                items.getOrThrow(ItemTags.PICKAXES),
-                3,
-                1,
-                Enchantment.constantCost(20),
-                Enchantment.constantCost(30),
-                6,
-                AttributeModifierSlot.MAINHAND))
-        );
     }
 
     private static void register(Registerable<Enchantment> registry, RegistryKey<Enchantment> key, Enchantment.Builder builder) {
