@@ -1,0 +1,15 @@
+{
+	"required": true,
+	"package": "charble.betterminingenchants.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"mixins": [
+		"PlayerMixin",
+		"BlockMixin"
+	],
+	"client": [
+
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

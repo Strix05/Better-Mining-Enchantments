@@ -1,0 +1,22 @@
+{
+  "anvil_cost": 6,
+  "description": {
+    "translate": "enchantment.better-mining-enchants.smelting"
+  },
+  "exclusive_set": "#better-mining-enchants:exclusive_set/better_mining_exclusive",
+  "max_cost": {
+    "base": 18,
+    "per_level_above_first": 0
+  },
+  "max_level": 1,
+  "min_cost": {
+    "base": 12,
+    "per_level_above_first": 0
+  },
+  "primary_items": "#minecraft:pickaxes",
+  "slots": [
+    "mainhand"
+  ],
+  "supported_items": "#minecraft:pickaxes",
+  "weight": 5
+}
