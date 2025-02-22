@@ -26,7 +26,6 @@ public class ModEnchantmentTagProvider extends FabricTagProvider.EnchantmentTagP
 
         getOrCreateTagBuilder(EnchantmentTags.TRADEABLE)
                 .add(ModEnchantments.OBSIDIAN_EFFICIENCY)
-                .add(ModEnchantments.VEINING)
                 .add(ModEnchantments.SMELTING);
 
     }
