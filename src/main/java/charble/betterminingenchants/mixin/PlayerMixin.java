@@ -1,6 +1,7 @@
 package charble.betterminingenchants.mixin;
 
 import charble.betterminingenchants.BetterMiningEnchants;
+import charble.betterminingenchants.BetterMiningEnchantsClient;
 import charble.betterminingenchants.attribute.ModAttributes;
 import charble.betterminingenchants.util.ModTags;
 import net.minecraft.block.BlockState;
@@ -25,8 +26,10 @@ public class PlayerMixin {
 
         if(block.isIn(ModTags.Blocks.OBSIDIAN_EFFICIENCY_MINEABLE)) {
             float originalret = cir.getReturnValue();
-            originalret += (20.0f * ((float) player.getAttributeValue(ModAttributes.PLAYER_OBSIDIAN_MINING_EFFICIENCY) - 1));
+            BetterMiningEnchants.LOGGER.info(Float.toString(originalret));
+            originalret += (20.0f * (float) player.getAttributeValue(ModAttributes.PLAYER_OBSIDIAN_MINING_EFFICIENCY));
             cir.setReturnValue(originalret);
+            BetterMiningEnchants.LOGGER.info(Float.toString(originalret));
         }
     }
 
