@@ -26,10 +26,8 @@ public class PlayerMixin {
 
         if(block.isIn(ModTags.Blocks.OBSIDIAN_EFFICIENCY_MINEABLE)) {
             float originalret = cir.getReturnValue();
-            BetterMiningEnchants.LOGGER.info(Float.toString(originalret));
             originalret += (20.0f * (float) player.getAttributeValue(ModAttributes.PLAYER_OBSIDIAN_MINING_EFFICIENCY));
             cir.setReturnValue(originalret);
-            BetterMiningEnchants.LOGGER.info(Float.toString(originalret));
         }
     }
 
